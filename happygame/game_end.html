@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The_last</title>
+    <style>
+        body{
+            background-image: url("game_end_background.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        .center{
+            text-align: center;
+            border-style: none;
+            width: auto;
+            padding: 15px;
+            background-color:rgba(255, 255, 255, 0.7);
+            margin-left: 20%;
+            margin-right: 20%;
+        }
+        @font-face {
+            font-family: noto-medium;
+            src: url(Noto_Sans_TC/NotoSansTC-Medium.otf);
+        }
+        @font-face {
+            font-family: noto-bold;
+            src: url(Noto_Sans_TC/NotoSansTC-Bold.otf);
+        }
+    </style>
+</head>
+<script>
+    function send(){
+        var ans = document.getElementById("ans").value
+        if(ans == "congratulate"){
+            alert("恭喜你通關了")
+            alert("其實4個結局都是一樣的喔w")
+            window.location.href="game_gg.html"
+        }
+    }
+</script>
+<body>
+    <div class="center" style="margin-top: 20%;font-family: noto-medium;font-size: 20px;">
+        恭喜你來到了最後一哩路
+        <br>
+        現在你需要把最後的通關密碼解出來
+        <br>
+        才可以把你的電腦從病毒中解放
+        <br>
+        加油吧
+        <br>
+        <br>
+        <br>
+        <br>
+        <input type="test" id="ans">
+        <br>
+        <button onclick="send()">送出答案</button>
+    </div>
+</body>
+</html>
